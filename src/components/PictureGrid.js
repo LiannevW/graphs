@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './PictureGrid.css'
 
 class PictureGrid extends Component {
@@ -7,7 +8,9 @@ class PictureGrid extends Component {
         <div className="container">
           <div className="picContainer figure1">
             <img className="imag" src={"https://photoipsum.com/city"}/>
-            <button className="btn">Button</button>
+            <Link to="/graph1">
+              <button className="btn">Button</button>
+            </Link>
           </div>
 
           <div className="picContainer figure2">
